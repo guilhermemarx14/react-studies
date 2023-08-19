@@ -43,6 +43,7 @@ export default function App() {
     }
     setTasks([...tasks, input]);
     setInput('');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [input, tasks]);
 
   function handleDelete(item: string) {
